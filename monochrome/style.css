@@ -1,0 +1,20 @@
+.centre {
+  margin: auto;
+  margin-top: 100px;
+  width: 640px;
+}
+
+body {
+  background-color: #000;
+  font-family: slkscr;
+  color: #FFF;
+}
+
+canvas {
+  positon: relative;
+}
+
+@font-face {
+    font-family: slkscr;
+    src: url(font/slkscre.ttf);
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html>
+
+  <head>
+    <meta charset="UTF-8"> 
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <script>
+      var muted = localStorage.getItem("muted");
+    
+      var toggleSound = function() {
+        if (muted) {
+          document.getElementById("soundButton").src = "img/soundOn.png";
+          muted = false;
+          localStorage.setItem("muted", false);
+          loop.play();
+        } else {
+          document.getElementById("soundButton").src = "img/soundOff.png";
+          muted = true;
+          localStorage.setItem("muted", true);
+          loop.pause();
+        }
+      }
+    </script>
+    <div class="centre">
+      <img id="soundButton" src="img/soundOn.png" onclick="toggleSound()"></img>
+      <canvas style="background-color:#FFF" id="canvas" width="640" height="480"></canvas>
+      <h3>Instructions:</h3>
+      <p>In each level, you must first find the teleporter. You can use the teleporter to switch between two worlds, which each have their own unique properites.</p>
+      <p>In the "colour" world you can see and collect coins, and there is less gravity. However, you can only breathe in the "normal" world, and staying in the "colour" world requires power.</p>
+    <div>
+    <p src="lv1.txt"></p>
+  </body>
+
+  <script src="keyboard.js"></script>
+  <script src="mouse.js"></script>
+  <script src="menu.js"></script>
+  <script src="levels.js"></script>
+  <script src="tiles.js"></script>
+  <script src="char.js"></script>
+  <script src="hud.js"></script>
+  <script src="main.js"></script>
+
+</html>
