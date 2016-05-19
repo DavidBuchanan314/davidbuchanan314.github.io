@@ -1,3 +1,6 @@
 [submodule "zoom-enhance"]
 	path = zoom-enhance
 	url = https://github.com/DavidBuchanan314/zoom-enhance.git
+[submodule "ocrsim"]
+	path = ocrsim
+	url = https://github.com/DavidBuchanan314/ocrsim
