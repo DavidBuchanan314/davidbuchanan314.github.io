@@ -4,3 +4,6 @@
 [submodule "ocrsim"]
 	path = ocrsim
 	url = https://github.com/DavidBuchanan314/ocrsim
+[submodule "asteroids"]
+	path = asteroids
+	url = https://github.com/DavidBuchanan314/asteroids
