@@ -1,0 +1,30 @@
+atmst package
+=============
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   atmst.blockstore
+   atmst.mst
+
+Submodules
+----------
+
+atmst.util module
+-----------------
+
+.. automodule:: atmst.util
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: atmst
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,21 @@
+atmst.blockstore package
+========================
+
+Submodules
+----------
+
+atmst.blockstore.car\_reader module
+-----------------------------------
+
+.. automodule:: atmst.blockstore.car_reader
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: atmst.blockstore
+   :members:
+   :undoc-members:
+   :show-inheritance:
