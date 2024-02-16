@@ -93,11 +93,141 @@
 <section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
 </section>
-<section id="atmst-blockstore-car-reader-module">
-<h2>atmst.blockstore.car_reader module<a class="headerlink" href="#atmst-blockstore-car-reader-module" title="Link to this heading"></a></h2>
+<section id="module-atmst.blockstore.car_reader">
+<span id="atmst-blockstore-car-reader-module"></span><h2>atmst.blockstore.car_reader module<a class="headerlink" href="#module-atmst.blockstore.car_reader" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="atmst.blockstore.car_reader.ReadOnlyCARBlockStore">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atmst.blockstore.car_reader.</span></span><span class="sig-name descname"><span class="pre">ReadOnlyCARBlockStore</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BinaryIO</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atmst.blockstore.car_reader.ReadOnlyCARBlockStore" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#atmst.blockstore.BlockStore" title="atmst.blockstore.BlockStore"><code class="xref py py-class docutils literal notranslate"><span class="pre">BlockStore</span></code></a></p>
+<p>This is a sliiiightly unclean abstraction because BlockStores are indexed
+by <cite>bytes</cite> rather than CID, but same idea. This is convenient for verifying
+proofs provided in CAR format, and for testing.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atmst.blockstore.car_reader.ReadOnlyCARBlockStore.block_offsets">
+<span class="sig-name descname"><span class="pre">block_offsets</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">bytes</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#atmst.blockstore.car_reader.ReadOnlyCARBlockStore.block_offsets" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atmst.blockstore.car_reader.ReadOnlyCARBlockStore.car_roots">
+<span class="sig-name descname"><span class="pre">car_roots</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">CID</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#atmst.blockstore.car_reader.ReadOnlyCARBlockStore.car_roots" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.blockstore.car_reader.ReadOnlyCARBlockStore.del_block">
+<span class="sig-name descname"><span class="pre">del_block</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#atmst.blockstore.car_reader.ReadOnlyCARBlockStore.del_block" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.blockstore.car_reader.ReadOnlyCARBlockStore.get_block">
+<span class="sig-name descname"><span class="pre">get_block</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bytes</span></span></span><a class="headerlink" href="#atmst.blockstore.car_reader.ReadOnlyCARBlockStore.get_block" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.blockstore.car_reader.ReadOnlyCARBlockStore.put_block">
+<span class="sig-name descname"><span class="pre">put_block</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#atmst.blockstore.car_reader.ReadOnlyCARBlockStore.put_block" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </section>
-<section id="module-contents">
-<h2>Module contents<a class="headerlink" href="#module-contents" title="Link to this heading"></a></h2>
+<section id="module-atmst.blockstore">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-atmst.blockstore" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="atmst.blockstore.BlockStore">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atmst.blockstore.</span></span><span class="sig-name descname"><span class="pre">BlockStore</span></span><a class="headerlink" href="#atmst.blockstore.BlockStore" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></p>
+<p>A block store is a k/v store where values are immutable once set. They can be deleted, though.
+In practice, k==hash(v), but this API doesn’t care about that.</p>
+<p>I’m not using the “native” __getitem__, __setitem__, __del__ methods because
+the semantics of these methods differ subtly.</p>
+<p>if you call put() twice with the same args, the second call is a nop.
+if you call put() twice with the same key but different value, you get a ValueError</p>
+<p>get() offers no default return value, you get a KeyError if it doesn’t exist.</p>
+<p>if you try to delete a key that doesn’t exist, that’s a nop.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.blockstore.BlockStore.del_block">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">del_block</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#atmst.blockstore.BlockStore.del_block" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.blockstore.BlockStore.get_block">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_block</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bytes</span></span></span><a class="headerlink" href="#atmst.blockstore.BlockStore.get_block" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.blockstore.BlockStore.put_block">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">put_block</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#atmst.blockstore.BlockStore.put_block" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="atmst.blockstore.MemoryBlockStore">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atmst.blockstore.</span></span><span class="sig-name descname"><span class="pre">MemoryBlockStore</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">bytes</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">bytes</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atmst.blockstore.MemoryBlockStore" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#atmst.blockstore.BlockStore" title="atmst.blockstore.BlockStore"><code class="xref py py-class docutils literal notranslate"><span class="pre">BlockStore</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.blockstore.MemoryBlockStore.del_block">
+<span class="sig-name descname"><span class="pre">del_block</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#atmst.blockstore.MemoryBlockStore.del_block" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.blockstore.MemoryBlockStore.get_block">
+<span class="sig-name descname"><span class="pre">get_block</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bytes</span></span></span><a class="headerlink" href="#atmst.blockstore.MemoryBlockStore.get_block" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.blockstore.MemoryBlockStore.put_block">
+<span class="sig-name descname"><span class="pre">put_block</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#atmst.blockstore.MemoryBlockStore.put_block" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="atmst.blockstore.OverlayBlockStore">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atmst.blockstore.</span></span><span class="sig-name descname"><span class="pre">OverlayBlockStore</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">upper</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#atmst.blockstore.BlockStore" title="atmst.blockstore.BlockStore"><span class="pre">BlockStore</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">lower</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#atmst.blockstore.BlockStore" title="atmst.blockstore.BlockStore"><span class="pre">BlockStore</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atmst.blockstore.OverlayBlockStore" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#atmst.blockstore.BlockStore" title="atmst.blockstore.BlockStore"><code class="xref py py-class docutils literal notranslate"><span class="pre">BlockStore</span></code></a></p>
+<p>reads come from “upper”, then “lower” if they don’t exist in upper.
+writes/deletes go only to “upper”.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.blockstore.OverlayBlockStore.del_block">
+<span class="sig-name descname"><span class="pre">del_block</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#atmst.blockstore.OverlayBlockStore.del_block" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.blockstore.OverlayBlockStore.get_block">
+<span class="sig-name descname"><span class="pre">get_block</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bytes</span></span></span><a class="headerlink" href="#atmst.blockstore.OverlayBlockStore.get_block" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.blockstore.OverlayBlockStore.put_block">
+<span class="sig-name descname"><span class="pre">put_block</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#atmst.blockstore.OverlayBlockStore.put_block" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="atmst.blockstore.SqliteBlockStore">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atmst.blockstore.</span></span><span class="sig-name descname"><span class="pre">SqliteBlockStore</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">con</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Connection</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">table</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'mst_blocks'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atmst.blockstore.SqliteBlockStore" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#atmst.blockstore.BlockStore" title="atmst.blockstore.BlockStore"><code class="xref py py-class docutils literal notranslate"><span class="pre">BlockStore</span></code></a></p>
+<p>NB: Caller is responsible for calling commit(), etc.
+TODO: consider allowing a custom table name?</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.blockstore.SqliteBlockStore.del_block">
+<span class="sig-name descname"><span class="pre">del_block</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#atmst.blockstore.SqliteBlockStore.del_block" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.blockstore.SqliteBlockStore.get_block">
+<span class="sig-name descname"><span class="pre">get_block</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bytes</span></span></span><a class="headerlink" href="#atmst.blockstore.SqliteBlockStore.get_block" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.blockstore.SqliteBlockStore.put_block">
+<span class="sig-name descname"><span class="pre">put_block</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#atmst.blockstore.SqliteBlockStore.put_block" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </section>
 </section>
 
