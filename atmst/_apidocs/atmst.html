@@ -54,8 +54,23 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#atmst-util-module">atmst.util module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#module-contents">Module contents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-atmst.util">atmst.util module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#atmst.util.hash_to_cid"><code class="docutils literal notranslate"><span class="pre">hash_to_cid()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#atmst.util.indent"><code class="docutils literal notranslate"><span class="pre">indent()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-atmst">Module contents</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#atmst.BlockStore"><code class="docutils literal notranslate"><span class="pre">BlockStore</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#atmst.MemoryBlockStore"><code class="docutils literal notranslate"><span class="pre">MemoryBlockStore</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#atmst.NodeStore"><code class="docutils literal notranslate"><span class="pre">NodeStore</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#atmst.NodeWalker"><code class="docutils literal notranslate"><span class="pre">NodeWalker</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#atmst.NodeWrangler"><code class="docutils literal notranslate"><span class="pre">NodeWrangler</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#atmst.ReadOnlyCARBlockStore"><code class="docutils literal notranslate"><span class="pre">ReadOnlyCARBlockStore</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#atmst.mst_diff"><code class="docutils literal notranslate"><span class="pre">mst_diff()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#atmst.record_diff"><code class="docutils literal notranslate"><span class="pre">record_diff()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#atmst.very_slow_mst_diff"><code class="docutils literal notranslate"><span class="pre">very_slow_mst_diff()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -137,7 +152,12 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="atmst.mst.html">atmst.mst package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="atmst.mst.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="atmst.mst.html#atmst-mst-diff-module">atmst.mst.diff module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="atmst.mst.html#module-atmst.mst.diff">atmst.mst.diff module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="atmst.mst.html#atmst.mst.diff.mst_diff"><code class="docutils literal notranslate"><span class="pre">mst_diff()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="atmst.mst.html#atmst.mst.diff.record_diff"><code class="docutils literal notranslate"><span class="pre">record_diff()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="atmst.mst.html#atmst.mst.diff.very_slow_mst_diff"><code class="docutils literal notranslate"><span class="pre">very_slow_mst_diff()</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="atmst.mst.html#module-atmst.mst.node">atmst.mst.node module</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="atmst.mst.html#atmst.mst.node.MSTNode"><code class="docutils literal notranslate"><span class="pre">MSTNode</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node.MSTNode.cid"><code class="docutils literal notranslate"><span class="pre">MSTNode.cid</span></code></a></li>
@@ -155,9 +175,55 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="atmst.mst.html#atmst-mst-node-store-module">atmst.mst.node_store module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="atmst.mst.html#atmst-mst-node-walker-module">atmst.mst.node_walker module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="atmst.mst.html#atmst-mst-wrangler-module">atmst.mst.wrangler module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="atmst.mst.html#module-atmst.mst.node_store">atmst.mst.node_store module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_store.NodeStore"><code class="docutils literal notranslate"><span class="pre">NodeStore</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_store.NodeStore.bs"><code class="docutils literal notranslate"><span class="pre">NodeStore.bs</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_store.NodeStore.cache"><code class="docutils literal notranslate"><span class="pre">NodeStore.cache</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_store.NodeStore.get_node"><code class="docutils literal notranslate"><span class="pre">NodeStore.get_node()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_store.NodeStore.pretty"><code class="docutils literal notranslate"><span class="pre">NodeStore.pretty()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_store.NodeStore.put_node"><code class="docutils literal notranslate"><span class="pre">NodeStore.put_node()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="atmst.mst.html#module-atmst.mst.node_walker">atmst.mst.node_walker module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker"><code class="docutils literal notranslate"><span class="pre">NodeWalker</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.KEY_MAX"><code class="docutils literal notranslate"><span class="pre">NodeWalker.KEY_MAX</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.KEY_MIN"><code class="docutils literal notranslate"><span class="pre">NodeWalker.KEY_MIN</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.StackFrame"><code class="docutils literal notranslate"><span class="pre">NodeWalker.StackFrame</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.down"><code class="docutils literal notranslate"><span class="pre">NodeWalker.down()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.frame"><code class="docutils literal notranslate"><span class="pre">NodeWalker.frame</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.is_final"><code class="docutils literal notranslate"><span class="pre">NodeWalker.is_final</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.iter_kv"><code class="docutils literal notranslate"><span class="pre">NodeWalker.iter_kv()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.iter_node_cids"><code class="docutils literal notranslate"><span class="pre">NodeWalker.iter_node_cids()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.lkey"><code class="docutils literal notranslate"><span class="pre">NodeWalker.lkey</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.lval"><code class="docutils literal notranslate"><span class="pre">NodeWalker.lval</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.next_kv"><code class="docutils literal notranslate"><span class="pre">NodeWalker.next_kv()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.ns"><code class="docutils literal notranslate"><span class="pre">NodeWalker.ns</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.right"><code class="docutils literal notranslate"><span class="pre">NodeWalker.right()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.rkey"><code class="docutils literal notranslate"><span class="pre">NodeWalker.rkey</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.rval"><code class="docutils literal notranslate"><span class="pre">NodeWalker.rval</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.stack"><code class="docutils literal notranslate"><span class="pre">NodeWalker.stack</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.subtree"><code class="docutils literal notranslate"><span class="pre">NodeWalker.subtree</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.subtree_walker"><code class="docutils literal notranslate"><span class="pre">NodeWalker.subtree_walker()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.enumerate_mst"><code class="docutils literal notranslate"><span class="pre">enumerate_mst()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.enumerate_mst_range"><code class="docutils literal notranslate"><span class="pre">enumerate_mst_range()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="atmst.mst.html#module-atmst.mst.wrangler">atmst.mst.wrangler module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="atmst.mst.html#atmst.mst.wrangler.NodeWrangler"><code class="docutils literal notranslate"><span class="pre">NodeWrangler</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.wrangler.NodeWrangler.del_record"><code class="docutils literal notranslate"><span class="pre">NodeWrangler.del_record()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.wrangler.NodeWrangler.ns"><code class="docutils literal notranslate"><span class="pre">NodeWrangler.ns</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.wrangler.NodeWrangler.put_record"><code class="docutils literal notranslate"><span class="pre">NodeWrangler.put_record()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="atmst.mst.html#atmst.mst.wrangler.tuple_insert_at"><code class="docutils literal notranslate"><span class="pre">tuple_insert_at()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="atmst.mst.html#atmst.mst.wrangler.tuple_remove_at"><code class="docutils literal notranslate"><span class="pre">tuple_remove_at()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="atmst.mst.html#atmst.mst.wrangler.tuple_replace_at"><code class="docutils literal notranslate"><span class="pre">tuple_replace_at()</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="atmst.mst.html#module-atmst.mst">Module contents</a></li>
 </ul>
 </li>
@@ -167,11 +233,321 @@
 <section id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
 </section>
-<section id="atmst-util-module">
-<h2>atmst.util module<a class="headerlink" href="#atmst-util-module" title="Link to this heading"></a></h2>
+<section id="module-atmst.util">
+<span id="atmst-util-module"></span><h2>atmst.util module<a class="headerlink" href="#module-atmst.util" title="Link to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="atmst.util.hash_to_cid">
+<span class="sig-prename descclassname"><span class="pre">atmst.util.</span></span><span class="sig-name descname"><span class="pre">hash_to_cid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">codec</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'dag-cbor'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">CID</span></span></span><a class="headerlink" href="#atmst.util.hash_to_cid" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="atmst.util.indent">
+<span class="sig-prename descclassname"><span class="pre">atmst.util.</span></span><span class="sig-name descname"><span class="pre">indent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#atmst.util.indent" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
 </section>
-<section id="module-contents">
-<h2>Module contents<a class="headerlink" href="#module-contents" title="Link to this heading"></a></h2>
+<section id="module-atmst">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-atmst" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="atmst.BlockStore">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atmst.</span></span><span class="sig-name descname"><span class="pre">BlockStore</span></span><a class="headerlink" href="#atmst.BlockStore" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></p>
+<p>A block store is a k/v store where values are immutable once set. They can be deleted, though.
+In practice, k==hash(v), but this API doesn’t care about that.</p>
+<p>I’m not using the “native” __getitem__, __setitem__, __del__ methods because
+the semantics of these methods differ subtly.</p>
+<p>if you call put() twice with the same args, the second call is a nop.
+if you call put() twice with the same key but different value, you get a ValueError</p>
+<p>get() offers no default return value, you get a KeyError if it doesn’t exist.</p>
+<p>if you try to delete a key that doesn’t exist, that’s a nop.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.BlockStore.del_block">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">del_block</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#atmst.BlockStore.del_block" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.BlockStore.get_block">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_block</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bytes</span></span></span><a class="headerlink" href="#atmst.BlockStore.get_block" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.BlockStore.put_block">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">put_block</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#atmst.BlockStore.put_block" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="atmst.MemoryBlockStore">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atmst.</span></span><span class="sig-name descname"><span class="pre">MemoryBlockStore</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">bytes</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">bytes</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atmst.MemoryBlockStore" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="atmst.blockstore.html#atmst.blockstore.BlockStore" title="atmst.blockstore.BlockStore"><code class="xref py py-class docutils literal notranslate"><span class="pre">BlockStore</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.MemoryBlockStore.del_block">
+<span class="sig-name descname"><span class="pre">del_block</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#atmst.MemoryBlockStore.del_block" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.MemoryBlockStore.get_block">
+<span class="sig-name descname"><span class="pre">get_block</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bytes</span></span></span><a class="headerlink" href="#atmst.MemoryBlockStore.get_block" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.MemoryBlockStore.put_block">
+<span class="sig-name descname"><span class="pre">put_block</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#atmst.MemoryBlockStore.put_block" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="atmst.NodeStore">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atmst.</span></span><span class="sig-name descname"><span class="pre">NodeStore</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="atmst.blockstore.html#atmst.blockstore.BlockStore" title="atmst.blockstore.BlockStore"><span class="pre">BlockStore</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atmst.NodeStore" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>NodeStore wraps a BlockStore to provide a more ergonomic interface
+for loading and storing MSTNodes</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atmst.NodeStore.bs">
+<span class="sig-name descname"><span class="pre">bs</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="atmst.blockstore.html#atmst.blockstore.BlockStore" title="atmst.blockstore.BlockStore"><span class="pre">BlockStore</span></a></em><a class="headerlink" href="#atmst.NodeStore.bs" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atmst.NodeStore.cache">
+<span class="sig-name descname"><span class="pre">cache</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">CID</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="atmst.mst.html#atmst.mst.node.MSTNode" title="atmst.mst.node.MSTNode"><span class="pre">MSTNode</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#atmst.NodeStore.cache" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.NodeStore.get_node">
+<span class="sig-name descname"><span class="pre">get_node</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CID</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="atmst.mst.html#atmst.mst.node.MSTNode" title="atmst.mst.node.MSTNode"><span class="pre">MSTNode</span></a></span></span><a class="headerlink" href="#atmst.NodeStore.get_node" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.NodeStore.pretty">
+<span class="sig-name descname"><span class="pre">pretty</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node_cid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CID</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#atmst.NodeStore.pretty" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.NodeStore.put_node">
+<span class="sig-name descname"><span class="pre">put_node</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="atmst.mst.html#atmst.mst.node.MSTNode" title="atmst.mst.node.MSTNode"><span class="pre">MSTNode</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="atmst.mst.html#atmst.mst.node.MSTNode" title="atmst.mst.node.MSTNode"><span class="pre">MSTNode</span></a></span></span><a class="headerlink" href="#atmst.NodeStore.put_node" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="atmst.NodeWalker">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atmst.</span></span><span class="sig-name descname"><span class="pre">NodeWalker</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_store.NodeStore" title="atmst.mst.node_store.NodeStore"><span class="pre">NodeStore</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">root_cid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CID</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lkey</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rkey</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'ÿ'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atmst.NodeWalker" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>NodeWalker makes implementing tree diffing and other MST query ops more
+convenient (but it does not, itself, implement them).</p>
+<p>A NodeWalker starts off at the root of a tree, and can walk along or recurse
+down into subtrees.</p>
+<p>Walking “off the end” of a subtree brings you back up to its next non-empty parent.</p>
+<p>Recall MSTNode layout:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">keys</span><span class="p">:</span>  <span class="p">(</span><span class="n">lkey</span><span class="p">)</span>  <span class="p">(</span><span class="mi">0</span><span class="p">,</span>    <span class="mi">1</span><span class="p">,</span>    <span class="mi">2</span><span class="p">,</span>    <span class="mi">3</span><span class="p">)</span>  <span class="p">(</span><span class="n">rkey</span><span class="p">)</span>
+<span class="n">vals</span><span class="p">:</span>          <span class="p">(</span><span class="mi">0</span><span class="p">,</span>    <span class="mi">1</span><span class="p">,</span>    <span class="mi">2</span><span class="p">,</span>    <span class="mi">3</span><span class="p">)</span>
+<span class="n">subtrees</span><span class="p">:</span>   <span class="p">(</span><span class="mi">0</span><span class="p">,</span>    <span class="mi">1</span><span class="p">,</span>    <span class="mi">2</span><span class="p">,</span>    <span class="mi">3</span><span class="p">,</span>    <span class="mi">4</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atmst.NodeWalker.KEY_MAX">
+<span class="sig-name descname"><span class="pre">KEY_MAX</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'ÿ'</span></em><a class="headerlink" href="#atmst.NodeWalker.KEY_MAX" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atmst.NodeWalker.KEY_MIN">
+<span class="sig-name descname"><span class="pre">KEY_MIN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="headerlink" href="#atmst.NodeWalker.KEY_MIN" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="atmst.NodeWalker.StackFrame">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StackFrame</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="atmst.mst.html#atmst.mst.node.MSTNode" title="atmst.mst.node.MSTNode"><span class="pre">atmst.mst.node.MSTNode</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">lkey</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rkey</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idx</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atmst.NodeWalker.StackFrame" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atmst.NodeWalker.StackFrame.idx">
+<span class="sig-name descname"><span class="pre">idx</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#atmst.NodeWalker.StackFrame.idx" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atmst.NodeWalker.StackFrame.lkey">
+<span class="sig-name descname"><span class="pre">lkey</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#atmst.NodeWalker.StackFrame.lkey" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atmst.NodeWalker.StackFrame.node">
+<span class="sig-name descname"><span class="pre">node</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="atmst.mst.html#atmst.mst.node.MSTNode" title="atmst.mst.node.MSTNode"><span class="pre">MSTNode</span></a></em><a class="headerlink" href="#atmst.NodeWalker.StackFrame.node" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atmst.NodeWalker.StackFrame.rkey">
+<span class="sig-name descname"><span class="pre">rkey</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#atmst.NodeWalker.StackFrame.rkey" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.NodeWalker.down">
+<span class="sig-name descname"><span class="pre">down</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#atmst.NodeWalker.down" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="atmst.NodeWalker.frame">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">frame</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.StackFrame" title="atmst.mst.node_walker.NodeWalker.StackFrame"><span class="pre">StackFrame</span></a></em><a class="headerlink" href="#atmst.NodeWalker.frame" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="atmst.NodeWalker.is_final">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_final</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#atmst.NodeWalker.is_final" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.NodeWalker.iter_kv">
+<span class="sig-name descname"><span class="pre">iter_kv</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atmst.NodeWalker.iter_kv" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.NodeWalker.iter_node_cids">
+<span class="sig-name descname"><span class="pre">iter_node_cids</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#atmst.NodeWalker.iter_node_cids" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="atmst.NodeWalker.lkey">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">lkey</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#atmst.NodeWalker.lkey" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="atmst.NodeWalker.lval">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">lval</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">CID</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#atmst.NodeWalker.lval" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.NodeWalker.next_kv">
+<span class="sig-name descname"><span class="pre">next_kv</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">CID</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#atmst.NodeWalker.next_kv" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atmst.NodeWalker.ns">
+<span class="sig-name descname"><span class="pre">ns</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="atmst.mst.html#atmst.mst.node_store.NodeStore" title="atmst.mst.node_store.NodeStore"><span class="pre">NodeStore</span></a></em><a class="headerlink" href="#atmst.NodeWalker.ns" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.NodeWalker.right">
+<span class="sig-name descname"><span class="pre">right</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#atmst.NodeWalker.right" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="atmst.NodeWalker.rkey">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rkey</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#atmst.NodeWalker.rkey" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="atmst.NodeWalker.rval">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rval</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">CID</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#atmst.NodeWalker.rval" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atmst.NodeWalker.stack">
+<span class="sig-name descname"><span class="pre">stack</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.StackFrame" title="atmst.mst.node_walker.NodeWalker.StackFrame"><span class="pre">StackFrame</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#atmst.NodeWalker.stack" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="atmst.NodeWalker.subtree">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">subtree</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">CID</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#atmst.NodeWalker.subtree" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.NodeWalker.subtree_walker">
+<span class="sig-name descname"><span class="pre">subtree_walker</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Self</span></span></span><a class="headerlink" href="#atmst.NodeWalker.subtree_walker" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="atmst.NodeWrangler">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atmst.</span></span><span class="sig-name descname"><span class="pre">NodeWrangler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_store.NodeStore" title="atmst.mst.node_store.NodeStore"><span class="pre">NodeStore</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atmst.NodeWrangler" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>NodeWrangler is where core MST transformation ops are implemented, backed
+by a NodeStore</p>
+<p>The external APIs take a CID (the MST root) and return a CID (the new root),
+while storing any newly created nodes in the NodeStore.</p>
+<p>Neither method should ever fail - deleting a node that doesn’t exist is a nop,
+and adding the same node twice with the same value is also a nop. Callers
+can detect these cases by seeing if the initial and final CIDs changed.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.NodeWrangler.del_record">
+<span class="sig-name descname"><span class="pre">del_record</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">root_cid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CID</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">CID</span></span></span><a class="headerlink" href="#atmst.NodeWrangler.del_record" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atmst.NodeWrangler.ns">
+<span class="sig-name descname"><span class="pre">ns</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="atmst.mst.html#atmst.mst.node_store.NodeStore" title="atmst.mst.node_store.NodeStore"><span class="pre">NodeStore</span></a></em><a class="headerlink" href="#atmst.NodeWrangler.ns" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.NodeWrangler.put_record">
+<span class="sig-name descname"><span class="pre">put_record</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">root_cid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CID</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">val</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CID</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">CID</span></span></span><a class="headerlink" href="#atmst.NodeWrangler.put_record" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="atmst.ReadOnlyCARBlockStore">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atmst.</span></span><span class="sig-name descname"><span class="pre">ReadOnlyCARBlockStore</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">BinaryIO</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atmst.ReadOnlyCARBlockStore" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="atmst.blockstore.html#atmst.blockstore.BlockStore" title="atmst.blockstore.BlockStore"><code class="xref py py-class docutils literal notranslate"><span class="pre">BlockStore</span></code></a></p>
+<p>This is a sliiiightly unclean abstraction because BlockStores are indexed
+by <cite>bytes</cite> rather than CID, but same idea. This is convenient for verifying
+proofs provided in CAR format, and for testing.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atmst.ReadOnlyCARBlockStore.block_offsets">
+<span class="sig-name descname"><span class="pre">block_offsets</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">bytes</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#atmst.ReadOnlyCARBlockStore.block_offsets" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="atmst.ReadOnlyCARBlockStore.car_roots">
+<span class="sig-name descname"><span class="pre">car_roots</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">CID</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#atmst.ReadOnlyCARBlockStore.car_roots" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.ReadOnlyCARBlockStore.del_block">
+<span class="sig-name descname"><span class="pre">del_block</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#atmst.ReadOnlyCARBlockStore.del_block" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.ReadOnlyCARBlockStore.get_block">
+<span class="sig-name descname"><span class="pre">get_block</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bytes</span></span></span><a class="headerlink" href="#atmst.ReadOnlyCARBlockStore.get_block" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.ReadOnlyCARBlockStore.put_block">
+<span class="sig-name descname"><span class="pre">put_block</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#atmst.ReadOnlyCARBlockStore.put_block" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="atmst.mst_diff">
+<span class="sig-prename descclassname"><span class="pre">atmst.</span></span><span class="sig-name descname"><span class="pre">mst_diff</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_store.NodeStore" title="atmst.mst.node_store.NodeStore"><span class="pre">NodeStore</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">root_a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CID</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">root_b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CID</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Set</span><span class="p"><span class="pre">[</span></span><span class="pre">CID</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Set</span><span class="p"><span class="pre">[</span></span><span class="pre">CID</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#atmst.mst_diff" title="Link to this definition"></a></dt>
+<dd><p>Given two MST root node CIDs, efficiently compute the difference between them, represented as
+two sets holding the created and deleted MST nodes respectively (referenced by CIDs).</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="atmst.record_diff">
+<span class="sig-prename descclassname"><span class="pre">atmst.</span></span><span class="sig-name descname"><span class="pre">record_diff</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_store.NodeStore" title="atmst.mst.node_store.NodeStore"><span class="pre">NodeStore</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">created</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">set</span><span class="p"><span class="pre">[</span></span><span class="pre">CID</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deleted</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">set</span><span class="p"><span class="pre">[</span></span><span class="pre">CID</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#atmst.record_diff" title="Link to this definition"></a></dt>
+<dd><p>Given two sets of MST nodes (for example, the result of <a class="reference internal" href="#atmst.mst_diff" title="atmst.mst_diff"><code class="xref py py-meth docutils literal notranslate"><span class="pre">mst_diff()</span></code></a>), this
+returns an iterator of record changes, in one of 3 formats:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="s2">&quot;created&quot;</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+<span class="p">(</span><span class="s2">&quot;updated&quot;</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">old_value</span><span class="p">,</span> <span class="n">new_value</span><span class="p">)</span>
+<span class="p">(</span><span class="s2">&quot;deleted&quot;</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="atmst.very_slow_mst_diff">
+<span class="sig-prename descclassname"><span class="pre">atmst.</span></span><span class="sig-name descname"><span class="pre">very_slow_mst_diff</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_store.NodeStore" title="atmst.mst.node_store.NodeStore"><span class="pre">NodeStore</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">root_a</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CID</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">root_b</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CID</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atmst.very_slow_mst_diff" title="Link to this definition"></a></dt>
+<dd><p>This should return the same result as <a class="reference internal" href="#atmst.mst_diff" title="atmst.mst_diff"><code class="xref py py-meth docutils literal notranslate"><span class="pre">mst_diff()</span></code></a>, but it gets there in a slow
+but much more obvious way (enumerating all nodes), so it’s useful for testing.</p>
+<p>It’s actually faster for smaller trees, but it chokes on trees with thousands of nodes (especially if the NodeStore is slow).</p>
+</dd></dl>
+
 </section>
 </section>
 
