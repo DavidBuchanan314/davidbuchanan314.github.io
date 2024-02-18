@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome to atmst’s documentation! &mdash; atmst 0.0.1 documentation</title>
+  <title>cartool &mdash; atmst 0.0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
 
@@ -21,7 +21,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Library Overview" href="overview.html" /> 
+    <link rel="next" title="atmst" href="_apidocs/modules.html" />
+    <link rel="prev" title="Library Overview" href="overview.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -32,7 +33,7 @@
 
           
           
-          <a href="#" class="icon icon-home">
+          <a href="index.html" class="icon icon-home">
             atmst
           </a>
 <div role="search">
@@ -44,9 +45,9 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="overview.html">Library Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cartool.html">cartool</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">cartool</a></li>
 <li class="toctree-l1"><a class="reference internal" href="_apidocs/modules.html">atmst</a></li>
 </ul>
 
@@ -56,17 +57,17 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">atmst</a>
+          <a href="index.html">atmst</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Welcome to atmst’s documentation!</li>
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">cartool</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/cartool.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -74,41 +75,28 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="welcome-to-atmst-s-documentation">
-<h1>Welcome to atmst’s documentation!<a class="headerlink" href="#welcome-to-atmst-s-documentation" title="Link to this heading"></a></h1>
-<p>If you want to use atmst as a library, start by reading the <a class="reference internal" href="overview.html#overview"><span class="std std-ref">Library Overview</span></a>.</p>
-<p>You may also be interested in <a class="reference internal" href="cartool.html#cartool"><span class="std std-ref">cartool</span></a>.</p>
-<div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="overview.html">Library Overview</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="overview.html#block-storage">Block Storage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="overview.html#merkle-search-trees">Merkle Search Trees</a></li>
-<li class="toctree-l2"><a class="reference internal" href="overview.html#nodes">Nodes</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="cartool.html">cartool</a></li>
-<li class="toctree-l1"><a class="reference internal" href="_apidocs/modules.html">atmst</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="_apidocs/atmst.html">atmst package</a></li>
-</ul>
-</li>
-</ul>
+  <section id="cartool">
+<span id="id1"></span><h1>cartool<a class="headerlink" href="#cartool" title="Link to this heading"></a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">cartool</span></code> aims to be a CLI swiss-army-knife for analysing and modifying atproto repos stored inside CAR files.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>USAGE: cartool COMMAND [args...]
+
+Available commands:
+info &lt;car_path&gt; : print CAR header and repo info
+list &lt;car_path&gt; : list all records in the CAR (values as CIDs)
+dump &lt;car_path&gt; : dump all records in the CAR (values as JSON)
+dump_record &lt;car_path&gt; &lt;key&gt; : dump a single record, keyed on (&#39;collection/rkey&#39;)
+compact &lt;car_in&gt; &lt;car_out&gt; : rewrite the whole CAR, dropping any duplicated or unreferenced blocks
+diff &lt;car_a&gt; &lt;car_b&gt; : list the record diff between two CAR files
+</pre></div>
 </div>
-</section>
-<section id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Link to this heading"></a></h1>
-<ul class="simple">
-<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
-<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
-<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
-</ul>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="overview.html" class="btn btn-neutral float-right" title="Library Overview" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="overview.html" class="btn btn-neutral float-left" title="Library Overview" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="_apidocs/modules.html" class="btn btn-neutral float-right" title="atmst" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
