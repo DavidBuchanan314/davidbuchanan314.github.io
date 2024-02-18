@@ -4,10 +4,10 @@ atmst.blockstore package
 Submodules
 ----------
 
-atmst.blockstore.car\_reader module
------------------------------------
+atmst.blockstore.car\_file module
+---------------------------------
 
-.. automodule:: atmst.blockstore.car_reader
+.. automodule:: atmst.blockstore.car_file
    :members:
    :undoc-members:
    :show-inheritance:

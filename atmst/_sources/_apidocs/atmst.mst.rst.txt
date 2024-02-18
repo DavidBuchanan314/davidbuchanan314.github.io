@@ -36,10 +36,10 @@ atmst.mst.node\_walker module
    :undoc-members:
    :show-inheritance:
 
-atmst.mst.wrangler module
--------------------------
+atmst.mst.node\_wrangler module
+-------------------------------
 
-.. automodule:: atmst.mst.wrangler
+.. automodule:: atmst.mst.node_wrangler
    :members:
    :undoc-members:
    :show-inheritance:
