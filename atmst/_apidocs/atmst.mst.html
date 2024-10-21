@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="../">
 <head>
@@ -6,18 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>atmst.mst package &mdash; atmst 0.0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
 
   
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=d45e8c67"></script>
-        <script src="../_static/doctools.js?v=888ff710"></script>
-        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=d45e8c67"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -281,7 +279,7 @@ for loading and storing MSTNodes</p>
 <span id="atmst-mst-node-walker-module"></span><h2>atmst.mst.node_walker module<a class="headerlink" href="#module-atmst.mst.node_walker" title="Link to this heading"></a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="atmst.mst.node_walker.NodeWalker">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atmst.mst.node_walker.</span></span><span class="sig-name descname"><span class="pre">NodeWalker</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#atmst.mst.node_store.NodeStore" title="atmst.mst.node_store.NodeStore"><span class="pre">NodeStore</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">root_cid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CID</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lkey</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rkey</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'ÿ'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atmst.mst.node_walker.NodeWalker" title="Link to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atmst.mst.node_walker.</span></span><span class="sig-name descname"><span class="pre">NodeWalker</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#atmst.mst.node_store.NodeStore" title="atmst.mst.node_store.NodeStore"><span class="pre">NodeStore</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">root_cid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CID</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lpath</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rpath</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'ÿ'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atmst.mst.node_walker.NodeWalker" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>NodeWalker makes implementing tree diffing and other MST query ops more
 convenient (but it does not, itself, implement them).</p>
@@ -289,24 +287,24 @@ convenient (but it does not, itself, implement them).</p>
 down into subtrees.</p>
 <p>Walking “off the end” of a subtree brings you back up to its next non-empty parent.</p>
 <p>Recall MSTNode layout:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">keys</span><span class="p">:</span>  <span class="p">(</span><span class="n">lkey</span><span class="p">)</span>  <span class="p">(</span><span class="mi">0</span><span class="p">,</span>    <span class="mi">1</span><span class="p">,</span>    <span class="mi">2</span><span class="p">,</span>    <span class="mi">3</span><span class="p">)</span>  <span class="p">(</span><span class="n">rkey</span><span class="p">)</span>
-<span class="n">vals</span><span class="p">:</span>          <span class="p">(</span><span class="mi">0</span><span class="p">,</span>    <span class="mi">1</span><span class="p">,</span>    <span class="mi">2</span><span class="p">,</span>    <span class="mi">3</span><span class="p">)</span>
-<span class="n">subtrees</span><span class="p">:</span>   <span class="p">(</span><span class="mi">0</span><span class="p">,</span>    <span class="mi">1</span><span class="p">,</span>    <span class="mi">2</span><span class="p">,</span>    <span class="mi">3</span><span class="p">,</span>    <span class="mi">4</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">keys</span><span class="p">:</span>  <span class="p">(</span><span class="n">lpath</span><span class="p">)</span>  <span class="p">(</span><span class="mi">0</span><span class="p">,</span>    <span class="mi">1</span><span class="p">,</span>    <span class="mi">2</span><span class="p">,</span>    <span class="mi">3</span><span class="p">)</span>  <span class="p">(</span><span class="n">rpath</span><span class="p">)</span>
+<span class="n">vals</span><span class="p">:</span>           <span class="p">(</span><span class="mi">0</span><span class="p">,</span>    <span class="mi">1</span><span class="p">,</span>    <span class="mi">2</span><span class="p">,</span>    <span class="mi">3</span><span class="p">)</span>
+<span class="n">subtrees</span><span class="p">:</span>    <span class="p">(</span><span class="mi">0</span><span class="p">,</span>    <span class="mi">1</span><span class="p">,</span>    <span class="mi">2</span><span class="p">,</span>    <span class="mi">3</span><span class="p">,</span>    <span class="mi">4</span><span class="p">)</span>
 </pre></div>
 </div>
 <dl class="py attribute">
-<dt class="sig sig-object py" id="atmst.mst.node_walker.NodeWalker.KEY_MIN">
-<span class="sig-name descname"><span class="pre">KEY_MIN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="headerlink" href="#atmst.mst.node_walker.NodeWalker.KEY_MIN" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="atmst.mst.node_walker.NodeWalker.PATH_MIN">
+<span class="sig-name descname"><span class="pre">PATH_MIN</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="headerlink" href="#atmst.mst.node_walker.NodeWalker.PATH_MIN" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="atmst.mst.node_walker.NodeWalker.KEY_MAX">
-<span class="sig-name descname"><span class="pre">KEY_MAX</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'ÿ'</span></em><a class="headerlink" href="#atmst.mst.node_walker.NodeWalker.KEY_MAX" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="atmst.mst.node_walker.NodeWalker.PATH_MAX">
+<span class="sig-name descname"><span class="pre">PATH_MAX</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'ÿ'</span></em><a class="headerlink" href="#atmst.mst.node_walker.NodeWalker.PATH_MAX" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="atmst.mst.node_walker.NodeWalker.StackFrame">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StackFrame</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#atmst.mst.node.MSTNode" title="atmst.mst.node.MSTNode"><span class="pre">atmst.mst.node.MSTNode</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">lkey</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rkey</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idx</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atmst.mst.node_walker.NodeWalker.StackFrame" title="Link to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StackFrame</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">node</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#atmst.mst.node.MSTNode" title="atmst.mst.node.MSTNode"><span class="pre">atmst.mst.node.MSTNode</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">lpath</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rpath</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idx</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atmst.mst.node_walker.NodeWalker.StackFrame" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="atmst.mst.node_walker.NodeWalker.StackFrame.node">
@@ -314,13 +312,13 @@ down into subtrees.</p>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="atmst.mst.node_walker.NodeWalker.StackFrame.lkey">
-<span class="sig-name descname"><span class="pre">lkey</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#atmst.mst.node_walker.NodeWalker.StackFrame.lkey" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="atmst.mst.node_walker.NodeWalker.StackFrame.lpath">
+<span class="sig-name descname"><span class="pre">lpath</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#atmst.mst.node_walker.NodeWalker.StackFrame.lpath" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="atmst.mst.node_walker.NodeWalker.StackFrame.rkey">
-<span class="sig-name descname"><span class="pre">rkey</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#atmst.mst.node_walker.NodeWalker.StackFrame.rkey" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="atmst.mst.node_walker.NodeWalker.StackFrame.rpath">
+<span class="sig-name descname"><span class="pre">rpath</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#atmst.mst.node_walker.NodeWalker.StackFrame.rpath" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -351,8 +349,8 @@ down into subtrees.</p>
 <dd></dd></dl>
 
 <dl class="py property">
-<dt class="sig sig-object py" id="atmst.mst.node_walker.NodeWalker.lkey">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">lkey</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#atmst.mst.node_walker.NodeWalker.lkey" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="atmst.mst.node_walker.NodeWalker.lpath">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">lpath</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#atmst.mst.node_walker.NodeWalker.lpath" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py property">
@@ -366,8 +364,8 @@ down into subtrees.</p>
 <dd></dd></dl>
 
 <dl class="py property">
-<dt class="sig sig-object py" id="atmst.mst.node_walker.NodeWalker.rkey">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rkey</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#atmst.mst.node_walker.NodeWalker.rkey" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="atmst.mst.node_walker.NodeWalker.rpath">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rpath</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#atmst.mst.node_walker.NodeWalker.rpath" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py property">

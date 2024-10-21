@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="../">
 <head>
@@ -6,18 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>atmst package &mdash; atmst 0.0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
 
   
-  <!--[if lt IE 9]>
-    <script src="../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="../_static/jquery.js?v=5d32c60e"></script>
-        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="../_static/documentation_options.js?v=d45e8c67"></script>
-        <script src="../_static/doctools.js?v=888ff710"></script>
-        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=d45e8c67"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -57,7 +55,6 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#module-atmst.cartool">atmst.cartool module</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#atmst.cartool.ATJsonEncoder"><code class="docutils literal notranslate"><span class="pre">ATJsonEncoder</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#atmst.cartool.prettify_record"><code class="docutils literal notranslate"><span class="pre">prettify_record()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#atmst.cartool.open_car"><code class="docutils literal notranslate"><span class="pre">open_car()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="#atmst.cartool.print_info"><code class="docutils literal notranslate"><span class="pre">print_info()</span></code></a></li>
@@ -74,7 +71,6 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#module-atmst.util">atmst.util module</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#atmst.util.indent"><code class="docutils literal notranslate"><span class="pre">indent()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="#atmst.util.hash_to_cid"><code class="docutils literal notranslate"><span class="pre">hash_to_cid()</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#module-atmst">Module contents</a></li>
@@ -118,7 +114,7 @@
 <li class="toctree-l1"><a class="reference internal" href="atmst.blockstore.html">atmst.blockstore package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="atmst.blockstore.html#submodules">Submodules</a></li>
 <li class="toctree-l2"><a class="reference internal" href="atmst.blockstore.html#module-atmst.blockstore.car_file">atmst.blockstore.car_file module</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="atmst.blockstore.html#atmst.blockstore.car_file.parse_varint"><code class="docutils literal notranslate"><span class="pre">parse_varint()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="atmst.blockstore.html#atmst.blockstore.car_file.decode_varint"><code class="docutils literal notranslate"><span class="pre">decode_varint()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="atmst.blockstore.html#atmst.blockstore.car_file.encode_varint"><code class="docutils literal notranslate"><span class="pre">encode_varint()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="atmst.blockstore.html#atmst.blockstore.car_file.ReadOnlyCARBlockStore"><code class="docutils literal notranslate"><span class="pre">ReadOnlyCARBlockStore</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="atmst.blockstore.html#atmst.blockstore.car_file.ReadOnlyCARBlockStore.car_roots"><code class="docutils literal notranslate"><span class="pre">ReadOnlyCARBlockStore.car_roots</span></code></a></li>
@@ -210,17 +206,17 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="atmst.mst.html#module-atmst.mst.node_walker">atmst.mst.node_walker module</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker"><code class="docutils literal notranslate"><span class="pre">NodeWalker</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.KEY_MIN"><code class="docutils literal notranslate"><span class="pre">NodeWalker.KEY_MIN</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.KEY_MAX"><code class="docutils literal notranslate"><span class="pre">NodeWalker.KEY_MAX</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.PATH_MIN"><code class="docutils literal notranslate"><span class="pre">NodeWalker.PATH_MIN</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.PATH_MAX"><code class="docutils literal notranslate"><span class="pre">NodeWalker.PATH_MAX</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.StackFrame"><code class="docutils literal notranslate"><span class="pre">NodeWalker.StackFrame</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.ns"><code class="docutils literal notranslate"><span class="pre">NodeWalker.ns</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.stack"><code class="docutils literal notranslate"><span class="pre">NodeWalker.stack</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.subtree_walker"><code class="docutils literal notranslate"><span class="pre">NodeWalker.subtree_walker()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.frame"><code class="docutils literal notranslate"><span class="pre">NodeWalker.frame</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.lkey"><code class="docutils literal notranslate"><span class="pre">NodeWalker.lkey</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.lpath"><code class="docutils literal notranslate"><span class="pre">NodeWalker.lpath</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.lval"><code class="docutils literal notranslate"><span class="pre">NodeWalker.lval</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.subtree"><code class="docutils literal notranslate"><span class="pre">NodeWalker.subtree</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.rkey"><code class="docutils literal notranslate"><span class="pre">NodeWalker.rkey</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.rpath"><code class="docutils literal notranslate"><span class="pre">NodeWalker.rpath</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.rval"><code class="docutils literal notranslate"><span class="pre">NodeWalker.rval</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.is_final"><code class="docutils literal notranslate"><span class="pre">NodeWalker.is_final</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.right"><code class="docutils literal notranslate"><span class="pre">NodeWalker.right()</span></code></a></li>
@@ -255,33 +251,6 @@
 </section>
 <section id="module-atmst.cartool">
 <span id="atmst-cartool-module"></span><h2>atmst.cartool module<a class="headerlink" href="#module-atmst.cartool" title="Link to this heading"></a></h2>
-<dl class="py class">
-<dt class="sig sig-object py" id="atmst.cartool.ATJsonEncoder">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atmst.cartool.</span></span><span class="sig-name descname"><span class="pre">ATJsonEncoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skipkeys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ensure_ascii</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">check_circular</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allow_nan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort_keys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">separators</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atmst.cartool.ATJsonEncoder" title="Link to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">JSONEncoder</span></code></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="atmst.cartool.ATJsonEncoder.default">
-<span class="sig-name descname"><span class="pre">default</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">o</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atmst.cartool.ATJsonEncoder.default" title="Link to this definition"></a></dt>
-<dd><p>Implement this method in a subclass such that it returns
-a serializable object for <code class="docutils literal notranslate"><span class="pre">o</span></code>, or calls the base implementation
-(to raise a <code class="docutils literal notranslate"><span class="pre">TypeError</span></code>).</p>
-<p>For example, to support arbitrary iterators, you could
-implement default like this:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">default</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">o</span><span class="p">):</span>
-    <span class="k">try</span><span class="p">:</span>
-        <span class="n">iterable</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">o</span><span class="p">)</span>
-    <span class="k">except</span> <span class="ne">TypeError</span><span class="p">:</span>
-        <span class="k">pass</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="n">iterable</span><span class="p">)</span>
-    <span class="c1"># Let the base class default method raise the TypeError</span>
-    <span class="k">return</span> <span class="n">JSONEncoder</span><span class="o">.</span><span class="n">default</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">o</span><span class="p">)</span>
-</pre></div>
-</div>
-</dd></dl>
-
-</dd></dl>
-
 <dl class="py function">
 <dt class="sig sig-object py" id="atmst.cartool.prettify_record">
 <span class="sig-prename descclassname"><span class="pre">atmst.cartool.</span></span><span class="sig-name descname"><span class="pre">prettify_record</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">record</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#atmst.cartool.prettify_record" title="Link to this definition"></a></dt>
@@ -347,13 +316,9 @@ implement default like this:</p>
 <span id="atmst-util-module"></span><h2>atmst.util module<a class="headerlink" href="#module-atmst.util" title="Link to this heading"></a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="atmst.util.indent">
-<span class="sig-prename descclassname"><span class="pre">atmst.util.</span></span><span class="sig-name descname"><span class="pre">indent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#atmst.util.indent" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="atmst.util.hash_to_cid">
-<span class="sig-prename descclassname"><span class="pre">atmst.util.</span></span><span class="sig-name descname"><span class="pre">hash_to_cid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bytes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">codec</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'dag-cbor'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">CID</span></span></span><a class="headerlink" href="#atmst.util.hash_to_cid" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<span class="sig-prename descclassname"><span class="pre">atmst.util.</span></span><span class="sig-name descname"><span class="pre">indent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">istr</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'</span>&#160; <span class="pre">'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#atmst.util.indent" title="Link to this definition"></a></dt>
+<dd><p>Indent a multi-line string</p>
+</dd></dl>
 
 </section>
 <section id="module-atmst">
