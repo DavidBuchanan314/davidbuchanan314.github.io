@@ -117,7 +117,7 @@
 <li class="toctree-l3"><a class="reference internal" href="atmst.blockstore.html#atmst.blockstore.car_file.decode_varint"><code class="docutils literal notranslate"><span class="pre">decode_varint()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="atmst.blockstore.html#atmst.blockstore.car_file.encode_varint"><code class="docutils literal notranslate"><span class="pre">encode_varint()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="atmst.blockstore.html#atmst.blockstore.car_file.ReadOnlyCARBlockStore"><code class="docutils literal notranslate"><span class="pre">ReadOnlyCARBlockStore</span></code></a><ul>
-<li class="toctree-l4"><a class="reference internal" href="atmst.blockstore.html#atmst.blockstore.car_file.ReadOnlyCARBlockStore.car_roots"><code class="docutils literal notranslate"><span class="pre">ReadOnlyCARBlockStore.car_roots</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="atmst.blockstore.html#atmst.blockstore.car_file.ReadOnlyCARBlockStore.car_root"><code class="docutils literal notranslate"><span class="pre">ReadOnlyCARBlockStore.car_root</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="atmst.blockstore.html#atmst.blockstore.car_file.ReadOnlyCARBlockStore.block_offsets"><code class="docutils literal notranslate"><span class="pre">ReadOnlyCARBlockStore.block_offsets</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="atmst.blockstore.html#atmst.blockstore.car_file.ReadOnlyCARBlockStore.put_block"><code class="docutils literal notranslate"><span class="pre">ReadOnlyCARBlockStore.put_block()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="atmst.blockstore.html#atmst.blockstore.car_file.ReadOnlyCARBlockStore.get_block"><code class="docutils literal notranslate"><span class="pre">ReadOnlyCARBlockStore.get_block()</span></code></a></li>
@@ -166,7 +166,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="atmst.mst.html#atmst.mst.diff.RecordDelta"><code class="docutils literal notranslate"><span class="pre">RecordDelta</span></code></a><ul>
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.diff.RecordDelta.delta_type"><code class="docutils literal notranslate"><span class="pre">RecordDelta.delta_type</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.diff.RecordDelta.key"><code class="docutils literal notranslate"><span class="pre">RecordDelta.key</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.diff.RecordDelta.path"><code class="docutils literal notranslate"><span class="pre">RecordDelta.path</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.diff.RecordDelta.prior_value"><code class="docutils literal notranslate"><span class="pre">RecordDelta.prior_value</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.diff.RecordDelta.later_value"><code class="docutils literal notranslate"><span class="pre">RecordDelta.later_value</span></code></a></li>
 </ul>
@@ -187,7 +187,8 @@
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node.MSTNode.serialised"><code class="docutils literal notranslate"><span class="pre">MSTNode.serialised</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node.MSTNode.deserialise"><code class="docutils literal notranslate"><span class="pre">MSTNode.deserialise()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node.MSTNode.is_empty"><code class="docutils literal notranslate"><span class="pre">MSTNode.is_empty()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node.MSTNode.height"><code class="docutils literal notranslate"><span class="pre">MSTNode.height</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node.MSTNode.maybe_height"><code class="docutils literal notranslate"><span class="pre">MSTNode.maybe_height</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node.MSTNode.definitely_height"><code class="docutils literal notranslate"><span class="pre">MSTNode.definitely_height()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node.MSTNode.gte_index"><code class="docutils literal notranslate"><span class="pre">MSTNode.gte_index()</span></code></a></li>
 </ul>
 </li>
@@ -210,15 +211,19 @@
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.PATH_MAX"><code class="docutils literal notranslate"><span class="pre">NodeWalker.PATH_MAX</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.StackFrame"><code class="docutils literal notranslate"><span class="pre">NodeWalker.StackFrame</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.ns"><code class="docutils literal notranslate"><span class="pre">NodeWalker.ns</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.root_height"><code class="docutils literal notranslate"><span class="pre">NodeWalker.root_height</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.stack"><code class="docutils literal notranslate"><span class="pre">NodeWalker.stack</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.subtree_walker"><code class="docutils literal notranslate"><span class="pre">NodeWalker.subtree_walker()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.frame"><code class="docutils literal notranslate"><span class="pre">NodeWalker.frame</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.height"><code class="docutils literal notranslate"><span class="pre">NodeWalker.height</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.lpath"><code class="docutils literal notranslate"><span class="pre">NodeWalker.lpath</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.lval"><code class="docutils literal notranslate"><span class="pre">NodeWalker.lval</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.subtree"><code class="docutils literal notranslate"><span class="pre">NodeWalker.subtree</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.rpath"><code class="docutils literal notranslate"><span class="pre">NodeWalker.rpath</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.rval"><code class="docutils literal notranslate"><span class="pre">NodeWalker.rval</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.is_final"><code class="docutils literal notranslate"><span class="pre">NodeWalker.is_final</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.can_go_right"><code class="docutils literal notranslate"><span class="pre">NodeWalker.can_go_right</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.right_or_up"><code class="docutils literal notranslate"><span class="pre">NodeWalker.right_or_up()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.right"><code class="docutils literal notranslate"><span class="pre">NodeWalker.right()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.down"><code class="docutils literal notranslate"><span class="pre">NodeWalker.down()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.next_kv"><code class="docutils literal notranslate"><span class="pre">NodeWalker.next_kv()</span></code></a></li>
@@ -226,7 +231,7 @@
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.iter_nodes"><code class="docutils literal notranslate"><span class="pre">NodeWalker.iter_nodes()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.iter_node_cids"><code class="docutils literal notranslate"><span class="pre">NodeWalker.iter_node_cids()</span></code></a></li>
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.iter_kv_range"><code class="docutils literal notranslate"><span class="pre">NodeWalker.iter_kv_range()</span></code></a></li>
-<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.find_value"><code class="docutils literal notranslate"><span class="pre">NodeWalker.find_value()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_walker.NodeWalker.find_rpath"><code class="docutils literal notranslate"><span class="pre">NodeWalker.find_rpath()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -238,6 +243,13 @@
 <li class="toctree-l4"><a class="reference internal" href="atmst.mst.html#atmst.mst.node_wrangler.NodeWrangler.del_record"><code class="docutils literal notranslate"><span class="pre">NodeWrangler.del_record()</span></code></a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="atmst.mst.html#module-atmst.mst.proof">atmst.mst.proof module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="atmst.mst.html#atmst.mst.proof.InvalidProof"><code class="docutils literal notranslate"><span class="pre">InvalidProof</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="atmst.mst.html#atmst.mst.proof.find_rpath_and_build_proof"><code class="docutils literal notranslate"><span class="pre">find_rpath_and_build_proof()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="atmst.mst.html#atmst.mst.proof.verify_inclusion"><code class="docutils literal notranslate"><span class="pre">verify_inclusion()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="atmst.mst.html#atmst.mst.proof.verify_exclusion"><code class="docutils literal notranslate"><span class="pre">verify_exclusion()</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="atmst.mst.html#module-atmst.mst">Module contents</a></li>

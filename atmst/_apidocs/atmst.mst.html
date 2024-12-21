@@ -118,7 +118,7 @@
 
 <dl class="py class">
 <dt class="sig sig-object py" id="atmst.mst.diff.RecordDelta">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atmst.mst.diff.</span></span><span class="sig-name descname"><span class="pre">RecordDelta</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">delta_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#atmst.mst.diff.DeltaType" title="atmst.mst.diff.DeltaType"><span class="pre">atmst.mst.diff.DeltaType</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prior_value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">cbrrr.CID</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">later_value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">cbrrr.CID</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atmst.mst.diff.RecordDelta" title="Link to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atmst.mst.diff.</span></span><span class="sig-name descname"><span class="pre">RecordDelta</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">delta_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#atmst.mst.diff.DeltaType" title="atmst.mst.diff.DeltaType"><span class="pre">atmst.mst.diff.DeltaType</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prior_value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">cbrrr.CID</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">later_value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">cbrrr.CID</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atmst.mst.diff.RecordDelta" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="atmst.mst.diff.RecordDelta.delta_type">
@@ -126,8 +126,8 @@
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt class="sig sig-object py" id="atmst.mst.diff.RecordDelta.key">
-<span class="sig-name descname"><span class="pre">key</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#atmst.mst.diff.RecordDelta.key" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="atmst.mst.diff.RecordDelta.path">
+<span class="sig-name descname"><span class="pre">path</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#atmst.mst.diff.RecordDelta.path" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -225,8 +225,13 @@ of a single node, as opposed to a whole tree</p>
 <dd></dd></dl>
 
 <dl class="py property">
-<dt class="sig sig-object py" id="atmst.mst.node.MSTNode.height">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">height</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#atmst.mst.node.MSTNode.height" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="atmst.mst.node.MSTNode.maybe_height">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">maybe_height</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#atmst.mst.node.MSTNode.maybe_height" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.mst.node.MSTNode.definitely_height">
+<span class="sig-name descname"><span class="pre">definitely_height</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">int</span></span></span><a class="headerlink" href="#atmst.mst.node.MSTNode.definitely_height" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -279,7 +284,7 @@ for loading and storing MSTNodes</p>
 <span id="atmst-mst-node-walker-module"></span><h2>atmst.mst.node_walker module<a class="headerlink" href="#module-atmst.mst.node_walker" title="Link to this heading"></a></h2>
 <dl class="py class">
 <dt class="sig sig-object py" id="atmst.mst.node_walker.NodeWalker">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atmst.mst.node_walker.</span></span><span class="sig-name descname"><span class="pre">NodeWalker</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#atmst.mst.node_store.NodeStore" title="atmst.mst.node_store.NodeStore"><span class="pre">NodeStore</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">root_cid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CID</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lpath</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rpath</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'ÿ'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atmst.mst.node_walker.NodeWalker" title="Link to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atmst.mst.node_walker.</span></span><span class="sig-name descname"><span class="pre">NodeWalker</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#atmst.mst.node_store.NodeStore" title="atmst.mst.node_store.NodeStore"><span class="pre">NodeStore</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">root_cid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CID</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lpath</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rpath</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'ÿ'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">trusted</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">root_height</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#atmst.mst.node_walker.NodeWalker" title="Link to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>NodeWalker makes implementing tree diffing and other MST query ops more
 convenient (but it does not, itself, implement them).</p>
@@ -334,6 +339,11 @@ down into subtrees.</p>
 <dd></dd></dl>
 
 <dl class="py attribute">
+<dt class="sig sig-object py" id="atmst.mst.node_walker.NodeWalker.root_height">
+<span class="sig-name descname"><span class="pre">root_height</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#atmst.mst.node_walker.NodeWalker.root_height" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
 <dt class="sig sig-object py" id="atmst.mst.node_walker.NodeWalker.stack">
 <span class="sig-name descname"><span class="pre">stack</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#atmst.mst.node_walker.NodeWalker.StackFrame" title="atmst.mst.node_walker.NodeWalker.StackFrame"><span class="pre">StackFrame</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#atmst.mst.node_walker.NodeWalker.stack" title="Link to this definition"></a></dt>
 <dd></dd></dl>
@@ -346,6 +356,11 @@ down into subtrees.</p>
 <dl class="py property">
 <dt class="sig sig-object py" id="atmst.mst.node_walker.NodeWalker.frame">
 <em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">frame</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#atmst.mst.node_walker.NodeWalker.StackFrame" title="atmst.mst.node_walker.NodeWalker.StackFrame"><span class="pre">StackFrame</span></a></em><a class="headerlink" href="#atmst.mst.node_walker.NodeWalker.frame" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="atmst.mst.node_walker.NodeWalker.height">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">height</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#atmst.mst.node_walker.NodeWalker.height" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py property">
@@ -376,6 +391,16 @@ down into subtrees.</p>
 <dl class="py property">
 <dt class="sig sig-object py" id="atmst.mst.node_walker.NodeWalker.is_final">
 <em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_final</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#atmst.mst.node_walker.NodeWalker.is_final" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="atmst.mst.node_walker.NodeWalker.can_go_right">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">can_go_right</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#atmst.mst.node_walker.NodeWalker.can_go_right" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="atmst.mst.node_walker.NodeWalker.right_or_up">
+<span class="sig-name descname"><span class="pre">right_or_up</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#atmst.mst.node_walker.NodeWalker.right_or_up" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
@@ -414,8 +439,8 @@ down into subtrees.</p>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="atmst.mst.node_walker.NodeWalker.find_value">
-<span class="sig-name descname"><span class="pre">find_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">CID</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#atmst.mst.node_walker.NodeWalker.find_value" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="atmst.mst.node_walker.NodeWalker.find_rpath">
+<span class="sig-name descname"><span class="pre">find_rpath</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rpath</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">CID</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span></span><a class="headerlink" href="#atmst.mst.node_walker.NodeWalker.find_rpath" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -450,6 +475,30 @@ can detect these cases by seeing if the initial and final CIDs changed.</p>
 <dd></dd></dl>
 
 </dd></dl>
+
+</section>
+<section id="module-atmst.mst.proof">
+<span id="atmst-mst-proof-module"></span><h2>atmst.mst.proof module<a class="headerlink" href="#module-atmst.mst.proof" title="Link to this heading"></a></h2>
+<dl class="py exception">
+<dt class="sig sig-object py" id="atmst.mst.proof.InvalidProof">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">atmst.mst.proof.</span></span><span class="sig-name descname"><span class="pre">InvalidProof</span></span><a class="headerlink" href="#atmst.mst.proof.InvalidProof" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="atmst.mst.proof.find_rpath_and_build_proof">
+<span class="sig-prename descclassname"><span class="pre">atmst.mst.proof.</span></span><span class="sig-name descname"><span class="pre">find_rpath_and_build_proof</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#atmst.mst.node_store.NodeStore" title="atmst.mst.node_store.NodeStore"><span class="pre">NodeStore</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">root_cid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CID</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rpath</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">CID</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Set</span><span class="p"><span class="pre">[</span></span><span class="pre">CID</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#atmst.mst.proof.find_rpath_and_build_proof" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="atmst.mst.proof.verify_inclusion">
+<span class="sig-prename descclassname"><span class="pre">atmst.mst.proof.</span></span><span class="sig-name descname"><span class="pre">verify_inclusion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#atmst.mst.node_store.NodeStore" title="atmst.mst.node_store.NodeStore"><span class="pre">NodeStore</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">root_cid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CID</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rpath</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#atmst.mst.proof.verify_inclusion" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="atmst.mst.proof.verify_exclusion">
+<span class="sig-prename descclassname"><span class="pre">atmst.mst.proof.</span></span><span class="sig-name descname"><span class="pre">verify_exclusion</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#atmst.mst.node_store.NodeStore" title="atmst.mst.node_store.NodeStore"><span class="pre">NodeStore</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">root_cid</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">CID</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rpath</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#atmst.mst.proof.verify_exclusion" title="Link to this definition"></a></dt>
+<dd></dd></dl>
 
 </section>
 <section id="module-atmst.mst">

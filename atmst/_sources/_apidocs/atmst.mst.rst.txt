@@ -44,6 +44,14 @@ atmst.mst.node\_wrangler module
    :undoc-members:
    :show-inheritance:
 
+atmst.mst.proof module
+----------------------
+
+.. automodule:: atmst.mst.proof
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 Module contents
 ---------------
 
